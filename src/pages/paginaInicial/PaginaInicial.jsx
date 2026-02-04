@@ -17,7 +17,7 @@ const PaginaInicial = () => {
       
        <div className={styles.quantidades}>
             <div className={styles.qtdEmpresas}>
-                <h3>500+</h3>
+                <h2>500+</h2>
                 <p>Empresas Voluntárias</p>
             </div>
             <div className={styles.qtdRealizados}>
