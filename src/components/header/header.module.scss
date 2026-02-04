@@ -6,6 +6,7 @@
     padding: 0 20px;
     background-color: #205691;
     position: relative;
+    font-family: 'Source Sans 3', sans-serif;
 
     .imgLogo {
         max-width: 87px;
@@ -42,7 +43,7 @@
 .navUser {
     position: absolute;
     right: 0%;
-    top: 12%;
+    top: 5rem;
     background-color: #205691;
     
     a {
@@ -51,4 +52,8 @@
         color: #fff;
         text-align: end;
     }
+}
+
+.closedNavUser {
+    display: none;
 }
