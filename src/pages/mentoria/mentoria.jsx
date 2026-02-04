@@ -11,13 +11,13 @@ export default function Mentoria() {
 
         <div className={s.mentoriaconteudo}>
             <div className={s.cards}>
-                <img src="./src/assets/icones/cards (5).png" alt="Ícone representando doação de alimentos" />
+                <img src="./src/assets/icones/cards(5).png" alt="Ícone representando doação de alimentos" />
             </div>
              <div className={s.cards}>
-                <img src="./src/assets/icones/cards (3).png" alt="Ícone representando doação de alimentos" />
+                <img src="./src/assets/icones/cards(3).png" alt="Ícone representando doação de alimentos" />
             </div>
              <div className={s.cards}>
-                <img src="./src/assets/icones/cards (4).png" alt="Ícone representando doação de alimentos" />
+                <img src="./src/assets/icones/cards(4).png" alt="Ícone representando doação de alimentos" />
             </div>
 
     </div>

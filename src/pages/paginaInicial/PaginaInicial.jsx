@@ -1,5 +1,7 @@
 
 import styles from "./paginaInicial.module.scss";
+import img from "../../assets/icones/img.png"
+
 
 const PaginaInicial = () => {
   return (
@@ -31,7 +33,7 @@ const PaginaInicial = () => {
           <article className={styles.sectionParceiros}>
   <div className={styles.imgensHome}>    
             <div className={styles.img1}>
-                <img src="./src/assets/icones/img1.png" alt="Imagem de pessoas em um evento social" />
+                <img src={img} alt="Imagem de pessoas em um evento social" />
             </div>
     </div>
     </article>

@@ -11,13 +11,13 @@ export default function Voluntariado() {
 
         <div className={s.voluntariadoconteudo}>
             <div className={s.cards}>
-                <img src="./src/assets/icones/Frame 47 (2).png" alt="Ícone representando doação de alimentos" />
+                <img src="./src/assets/icones/Frame47(2).png" alt="Ícone representando doação de alimentos" />
             </div>
              <div className={s.cards}>
-                <img src="./src/assets/icones/Frame (6).png" alt="Ícone representando doação de alimentos" />
+                <img src="./src/assets/icones/Frame(6).png" alt="Ícone representando doação de alimentos" />
             </div>
              <div className={s.cards}>
-                <img src="./src/assets/icones/Frame 47 (1).png" alt="Ícone representando doação de alimentos" />
+                <img src="./src/assets/icones/Frame47(1).png" alt="Ícone representando doação de alimentos" />
             </div>
 
     </div>

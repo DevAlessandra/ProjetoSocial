@@ -14,10 +14,10 @@ export default function Doacao() {
                 <img src="./src/assets/icones/cards.png" alt="Ícone representando doação de alimentos" />
             </div>
              <div className={s.cards}>
-                <img src="./src/assets/icones/cards (1).png" alt="Ícone representando doação de alimentos" />
+                <img src="./src/assets/icones/cards(1).png" alt="Ícone representando doação de alimentos" />
             </div>
              <div className={s.cards}>
-                <img src="./src/assets/icones/cards (2).png" alt="Ícone representando doação de alimentos" />
+                <img src="./src/assets/icones/cards(2).png" alt="Ícone representando doação de alimentos" />
             </div>
 
     </div>
