@@ -52,17 +52,17 @@
 }
 
 .quantidades {
-  display: flex;
-  gap: 3rem;
-  margin-top: 3rem;
-    flex-direction: row;
+margin-top: 50px;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
     
 
   div {
-    h3 {
-      font-size: 1.6rem;
-      color: #1f4fa3;
-      font-weight: 700;
+    h2 {
+font-family: "Source Sans 3", sans-serif;
+font-size: 2rem;
+font-weight: 700;
     }
 
     p {

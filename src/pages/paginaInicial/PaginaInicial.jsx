@@ -13,7 +13,7 @@ const PaginaInicial = () => {
             <p>Conectamos sua empresa com projetos sociais impactantes. Juntos, criamos mudanças reais na comunidade.</p>
       
        
-        <button className={styles.btnCadastro}>Cadastrar Empresa  </button>
+        <button className={styles.btnCadastro}>Cadastrar Empresa ➔  </button>
       
        <div className={styles.quantidades}>
             <div className={styles.qtdEmpresas}>
