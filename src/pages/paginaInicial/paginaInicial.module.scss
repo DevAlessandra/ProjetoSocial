@@ -1,9 +1,9 @@
 .home {
   width: 100%;
   min-height: 100vh;
-  padding: 4rem 6rem;
   align-items: center;
   justify-content: space-between;
+  padding-left: 20px;
   background: #fff;
   font-family: "Segoe UI", sans-serif;
     display: flex;
@@ -24,9 +24,6 @@
     color: #1f4fa3;
     line-height: 1.1;
 
-    &:last-of-type {
-      margin-bottom: 1rem;
-    }
   }
 
   p {

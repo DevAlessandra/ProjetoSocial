@@ -21,11 +21,11 @@ const PaginaInicial = () => {
                 <p>Empresas Voluntárias</p>
             </div>
             <div className={styles.qtdRealizados}>
-                <h3>1.2K+ </h3>
+                <h2>1.2K+ </h2>
                 <p>Projetos Realizados</p>
             </div>
             <div className={styles.qtdVidas}>
-                <h3>50K+ </h3>
+                <h2>50K+ </h2>
                 <p>Vidas Impactadas </p>
             </div>
        </div>   
