@@ -1,0 +1,109 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem 6rem;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  font-family: "Segoe UI", sans-serif;
+    display: flex;
+  
+}
+.containerBtn {
+  margin-top: 1rem;
+   flex-direction: column;
+}
+
+
+.bannerHome {
+  max-width: 520px;
+
+  h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #1f4fa3;
+    line-height: 1.1;
+
+    &:last-of-type {
+      margin-bottom: 1rem;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    color: #205691;
+    margin-bottom: 1.8rem;
+    line-height: 1.6;
+  }
+}
+
+.btnCadastro {
+  margin-top: 1rem;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 6px;
+  background: #ff6b6b;
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background: #ff4c4c;
+    transform: translateY(-2px);
+  }
+}
+
+.quantidades {
+  display: flex;
+  gap: 3rem;
+  margin-top: 3rem;
+    flex-direction: row;
+    
+
+  div {
+    h3 {
+      font-size: 1.6rem;
+      color: #1f4fa3;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 0.85rem;
+      color: #1f4fa3;
+    }
+  }
+}
+
+.sectionParceiros {
+    display: flex;
+  align-items: center;
+  justify-content:space-between;
+flex-direction: row;
+  .img1 {
+    width: 520px;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .quantidade {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .imgensHome {
+    margin-top: 2rem;
+  }
+}

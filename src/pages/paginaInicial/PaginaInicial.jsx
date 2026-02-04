@@ -1,0 +1,46 @@
+
+import styles from "./paginaInicial.module.scss";
+
+const PaginaInicial = () => {
+  return (
+    <>
+    <main className={styles.home}>
+        <div className={styles.bannerHome}>
+            <h2>Projetos Sociais</h2>
+            <h2> que transformam</h2>
+            <p>Conectamos sua empresa com projetos sociais impactantes. Juntos, criamos mudanças reais na comunidade.</p>
+      
+       
+        <button className={styles.btnCadastro}>Cadastrar Empresa  </button>
+      
+       <div className={styles.quantidades}>
+            <div className={styles.qtdEmpresas}>
+                <h3>500+</h3>
+                <p>Empresas Voluntárias</p>
+            </div>
+            <div className={styles.qtdRealizados}>
+                <h3>1.2K+ </h3>
+                <p>Projetos Realizados</p>
+            </div>
+            <div className={styles.qtdVidas}>
+                <h3>50K+ </h3>
+                <p>Vidas Impactadas </p>
+            </div>
+       </div>   
+         </div>
+          <article className={styles.sectionParceiros}>
+  <div className={styles.imgensHome}>    
+            <div className={styles.img1}>
+                <img src="./src/assets/icones/img1.png" alt="Imagem de pessoas em um evento social" />
+            </div>
+    </div>
+    </article>
+       
+    </main>
+    
+  
+    </>
+  )
+}
+
+export default PaginaInicial

@@ -1,0 +1,42 @@
+.voluntariado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+
+    .voluntariadotitulo{
+        font-size: 2rem;
+        color: #1f4fa3;
+        font-weight: 700;
+        margin-bottom: 5rem;
+         font-family: 'Source Sans 3', sans-serif;
+    }
+}
+.voluntariadoconteudo{
+    display: flex;
+    font-family: 'Source Sans 3', sans-serif;
+    gap: 50px;
+    margin-bottom: 5rem;
+ 
+
+.cards{
+      border-right:#CBCBCB 1px solid;
+        padding-right: 50px;
+    }
+}   
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .voluntariado{
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+    .voluntariadoconteudo{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+}
