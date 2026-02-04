@@ -7,7 +7,7 @@ import Mentoria from "./pages/mentoria/mentoria"
 import EventosEP from "./pages/eventosEP/eventosEP"
 //import Usuario from "./pages/usuario/Usuario"
 import Header from "./components/header/Header"
-import Footer from "./components/footer/Footeer"
+import Footer from "./components/footer/Footer"
 
 const App = () => {
   return (
