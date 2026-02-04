@@ -2,7 +2,7 @@ import React from 'react'
 import s from './eventosEP.module.scss'
 import Empoderando_jovens from "../../assets/icones/Empoderando_jovens.png"
 import Tecnologia from "../../assets/icones/Tecnologia.png"
-import Carreira from "../../assets/icones/Carreira.png"
+import carreira from "../../assets/icones/carreira.png"
 
 export default function EventosEP() {
   return (
@@ -20,7 +20,7 @@ export default function EventosEP() {
                 <img src={Tecnologia} alt="Ícone representando doação de alimentos" />
             </div>
              <div className={s.cards}>
-                <img src={Carreira} alt="Ícone representando doação de alimentos" />
+                <img src={carreira} alt="Ícone representando doação de alimentos" />
             </div>
 
     </div>
