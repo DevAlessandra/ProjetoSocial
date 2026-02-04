@@ -1,5 +1,8 @@
 import React from 'react'
 import s from './doacao.module.scss'
+import cards from "../../assets/icones/cards.png"
+import cards1 from "../../assets/icones/cards1.png"
+import cards2 from "../../assets/icones/cards2.png"
 
 export default function Doacao() {
   return (
@@ -11,13 +14,13 @@ export default function Doacao() {
 
         <div className={s.doacaoconteudo}>
             <div className={s.cards}>
-                <img src="./src/assets/icones/cards.png" alt="Ícone representando doação de alimentos" />
+                <img src={cards}c alt="Ícone representando doação de alimentos" />
             </div>
              <div className={s.cards}>
-                <img src="./src/assets/icones/cards(1).png" alt="Ícone representando doação de alimentos" />
+                <img src={cards1} alt="Ícone representando doação de alimentos" />
             </div>
              <div className={s.cards}>
-                <img src="./src/assets/icones/cards(2).png" alt="Ícone representando doação de alimentos" />
+                <img src={cards2} alt="Ícone representando doação de alimentos" />
             </div>
 
     </div>

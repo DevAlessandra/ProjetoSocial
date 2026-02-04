@@ -1,5 +1,8 @@
 import React from 'react'
 import s from './voluntariado.module.scss'
+import reciclagem from "../../assets/icones/reciclagem.png"
+import Tecnologia from "../../assets/icones/Tecnologia.png"
+import esporte from "../../assets/icones/esporte.png"
 
 export default function Voluntariado() {
   return (
@@ -11,13 +14,13 @@ export default function Voluntariado() {
 
         <div className={s.voluntariadoconteudo}>
             <div className={s.cards}>
-                <img src="./src/assets/icones/Frame47(2).png" alt="Ícone representando doação de alimentos" />
+                <img src={reciclagem} alt="Ícone representando reciclagem" />
             </div>
              <div className={s.cards}>
-                <img src="./src/assets/icones/Frame(6).png" alt="Ícone representando doação de alimentos" />
+                <img src={Tecnologia} alt="Ícone aulas tecnologia" />
             </div>
              <div className={s.cards}>
-                <img src="./src/assets/icones/Frame47(1).png" alt="Ícone representando doação de alimentos" />
+                <img src={esporte} alt="Ícone esporte e inclusão " />
             </div>
 
     </div>

@@ -1,5 +1,8 @@
 import React from 'react'
 import s from './mentoria.module.scss'
+import cards3 from "../../assets/icones/cards3.png"
+import cards4 from "../../assets/icones/cards4.png"
+import cards5 from "../../assets/icones/cards5.png" 
 
 export default function Mentoria() {
   return (
@@ -11,13 +14,13 @@ export default function Mentoria() {
 
         <div className={s.mentoriaconteudo}>
             <div className={s.cards}>
-                <img src="./src/assets/icones/cards(5).png" alt="Ícone representando doação de alimentos" />
+                <img src={cards5} alt="Ícone representando doação de alimentos" />
             </div>
              <div className={s.cards}>
-                <img src="./src/assets/icones/cards(3).png" alt="Ícone representando doação de alimentos" />
+                <img src={cards3} alt="Ícone representando doação de alimentos" />
             </div>
              <div className={s.cards}>
-                <img src="./src/assets/icones/cards(4).png" alt="Ícone representando doação de alimentos" />
+                <img src={cards4} alt="Ícone representando doação de alimentos" />
             </div>
 
     </div>
