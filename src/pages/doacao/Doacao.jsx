@@ -1,31 +1,44 @@
-import React from 'react'
-import s from './doacao.module.scss'
-import cards from "../../assets/icones/cards.png"
-import cards1 from "../../assets/icones/cards1.png"
-import cards2 from "../../assets/icones/cards2.png"
-
+import InfoCard from "../../components/infoCard/infoCard"
+import institutograndefamilia from "../../assets/icones/institutograndefamilia.png"
+import projetofuturoescola from "../../assets/icones/projetofuturoescola.png"
+import institutoconectajovem from "../../assets/icones/institutoconectajovem.png"
+import s from "./doacao.module.scss"
 export default function Doacao() {
-  return (
-     <>
-    <div className={s.doacao}>
-        <div className={s.doacaotitulo}>
-            <h1>Doação </h1>
-        </div>
+    return (
+      <div className={s.doacao}>
+        <h1>Doação </h1>
+      <section className={s.cards}>
+          <article>
+            <InfoCard 
+              img={institutograndefamilia}
+              subtitulo="Instituto Grande Família"
+              paragrafo="Contribua com alimentos não perecíveis e ajude famílias em situação de vulnerabilidade."
+              segParagrafo=""
+              textoBotao="Quero Doar"
+            />
+          </article>
 
-        <div className={s.doacaoconteudo}>
-            <div className={s.cards}>
-                <img src={cards}c alt="Ícone representando doação de alimentos" />
-            </div>
-             <div className={s.cards}>
-                <img src={cards1} alt="Ícone representando doação de alimentos" />
-            </div>
-             <div className={s.cards}>
-                <img src={cards2} alt="Ícone representando doação de alimentos" />
-            </div>
+           <article>
+            <InfoCard 
+              img={projetofuturoescola}
+              subtitulo="Projeto Futuro na Escola"
+              paragrafo="Doe livros, cadernos, lápis, mochilas e canetas para ajudar jovens a continuarem seus estudos com mais estrutura."
+              segParagrafo=""
+              textoBotao="Quero Doar"
+            />
+          </article>
+         <article>
+            <InfoCard 
+              img={institutoconectajovem}
+              subtitulo="Instituto Conecta Jovem"
+              paragrafo="Doe computadores usados, tablets ou celulares em bom estado para permitir que jovens tenham acesso ao mundo digital e novas oportunidades."
+              segParagrafo=""
+              textoBotao="Quero Doar"
+            />
+          </article>
 
-    </div>
-    </div>
-    </>
-  )
-
+        </section>
+      </div>
+    )
 }
+

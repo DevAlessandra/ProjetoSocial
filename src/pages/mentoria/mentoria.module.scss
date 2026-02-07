@@ -1,41 +1,36 @@
-.mentoria{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 80px;
+.mentoria {
+  padding: 60px 80px;
 
-    .mentoriatitulo{
-        font-size: 2rem;
-        color: #1f4fa3;
-        font-weight: 700;
-        margin-bottom: 5rem;
-         font-family: 'Source Sans 3', sans-serif;
-    }
-}
-.mentoriaconteudo{
-    display: flex;
-    font-family: 'Source Sans 3', sans-serif;
-    gap:50px;
-    margin-bottom: 5rem;
- 
-
-.cards{
-      border-right:#CBCBCB 1px solid;
-        padding-right: 50px;
-    }
-}   
-/* RESPONSIVO */
-@media (max-width: 768px) {
-  .mentoria{
-    flex-direction: column;
+  h1 {
     text-align: center;
-    padding: 2rem;
+    color: #205691;
+    margin-bottom: 50px;
+    font-size: 2.2rem;
+    font-family: "Source Sans 3", sans-serif;
   }
+}
 
-    .mentoriaconteudo{
-        flex-direction: column;
-        gap: 2rem;
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 100px;
+   align-items: stretch;
+}
+
+@media screen and (max-width: 768px) {
+    .mentoria {
+        padding: 40px 20px;
     }
 
+    .mentoria h1 {
+        font-size: 1.8rem;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+    
 }

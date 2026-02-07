@@ -1,31 +1,47 @@
 import React from 'react'
 import s from './mentoria.module.scss'
-import cards3 from "../../assets/icones/cards3.png"
-import cards4 from "../../assets/icones/cards4.png"
-import cards5 from "../../assets/icones/cards5.png" 
+import InfoCard from "../../components/infoCard/infoCard"
+import mentoriacarreiraemprego from "../../assets/icones/mentoriacarreiraemprego.png"
+import compartilheexperiencia from "../../assets/icones/compartilheexperiencia.png"
+import acompanhamento from "../../assets/icones/acompanhamento.png" 
 
 export default function Mentoria() {
   return (
-     <>
     <div className={s.mentoria}>
-        <div className={s.mentoriatitulo}>
-            <h1>Mentoria </h1>
-        </div>
+           <h1>Mentoria </h1>
+      <section className={s.cards}>
+          <article>
+            <InfoCard 
+              img={mentoriacarreiraemprego}
+              subtitulo="Mentoria em Carreira e Emprego"
+              paragrafo="Receba orientações sobre carreira e emprego com profissionais qualificados."
+              segParagrafo=""
+              textoBotao="Quero Participar"
+            />
+          </article>
 
-        <div className={s.mentoriaconteudo}>
-            <div className={s.cards}>
-                <img src={cards5} alt="Ícone representando doação de alimentos" />
-            </div>
-             <div className={s.cards}>
-                <img src={cards3} alt="Ícone representando doação de alimentos" />
-            </div>
-             <div className={s.cards}>
-                <img src={cards4} alt="Ícone representando doação de alimentos" />
-            </div>
+           <article>
+            <InfoCard 
+              img={compartilheexperiencia}
+              subtitulo="Compartilhe sua Experiência"
+              paragrafo="Compartilhe sua experiência profissional com jovens em busca de orientação."
+              segParagrafo=""
+              textoBotao="Quero Participar"
+            />
+          </article>
+         <article>
+            <InfoCard 
+              img={acompanhamento}
+              subtitulo="Acompanhamento Individual"
+              paragrafo="Receba acompanhamento individualizado para desenvolver suas habilidades."
+              segParagrafo=""
+              textoBotao="Quero Participar"
+            />
+          
+          </article>
 
-    </div>
-    </div>
-    </>
-  )
-
+          
+        </section>
+      </div>
+    )
 }

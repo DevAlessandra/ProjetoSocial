@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import logo from "../../assets/icones/logo.png"
 import { useEffect, useState } from "react"
 
-const Header = () => {
+export default function Header() {
     
   const [menuAberto, setMenuAberto] = useState(false)
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768)
@@ -30,14 +30,14 @@ const Header = () => {
           <Link className={s.Link} to={"/doacao"}>Doação</Link>
           <Link className={s.Link} to={"/voluntariado"}>Voluntariado</Link>
           <Link className={s.Link} to={"/mentoria"}>Mentoria</Link>
-          <Link className={s.Link} to={"/eventosEP"}>Eventos</Link>
+          <Link className={s.Link} to={"/eventosEP"}>Eventos & Palestras</Link>
           </nav>)
         }
         
 
         <img className={s.imgUser} src="https://avatars.githubusercontent.com/u/152770924?u=7db0e031a666d808c6d3916f0850db491cc92679&v=4&size=64" alt="Imagem do usuário" onClick={() => setMenuAberto(!menuAberto)}/>
       </header>
-      <nav className={!menuAberto ? s.navUser : s.closedNavUser}>
+      <nav className={menuAberto ? s.navUser : s.closedNavUser}>
         <Link to={"/usuario"} onClick={() => setMenuAberto(false)}>Alessandra Santana </Link>
         <Link onClick={() => setMenuAberto(false)}>Meu voluntariado</Link>
         <Link onClick={() => setMenuAberto(false)}>Configurações da conta</Link>
@@ -56,4 +56,3 @@ const Header = () => {
   )
 }
 
-export default Header

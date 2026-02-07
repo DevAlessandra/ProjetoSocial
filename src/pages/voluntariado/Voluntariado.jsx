@@ -1,31 +1,45 @@
 import React from 'react'
 import s from './voluntariado.module.scss'
-import reciclagem from "../../assets/icones/reciclagem.png"
-import Tecnologia from "../../assets/icones/Tecnologia.png"
-import esporte from "../../assets/icones/esporte.png"
+import InfoCard from "../../components/infoCard/infoCard"
+import mutiraoreciclagem from "../../assets/icones/mutiraoreciclagem.png"
+import aulastecnologia from "../../assets/icones/aulastecnologia.png"
+import esporteinclusao from "../../assets/icones/esporteinclusao.png"
 
 export default function Voluntariado() {
   return (
-     <>
+     
     <div className={s.voluntariado}>
-        <div className={s.voluntariadotitulo}>
-            <h1>Voluntariado </h1>
-        </div>
+           <h1>Voluntariado </h1>
+      <section className={s.cards}>
+          <article>
+            <InfoCard 
+              img={mutiraoreciclagem}
+              subtitulo="Mutirão de Reciclagem"
+              paragrafo="Participe de nossos mutirões e ajude a reciclar materiais que podem ser reutilizados."
+              segParagrafo=""
+              textoBotao="Quero Participar"
+            />
+          </article>
 
-        <div className={s.voluntariadoconteudo}>
-            <div className={s.cards}>
-                <img src={reciclagem} alt="Ícone representando reciclagem" />
-            </div>
-             <div className={s.cards}>
-                <img src={Tecnologia} alt="Ícone aulas tecnologia" />
-            </div>
-             <div className={s.cards}>
-                <img src={esporte} alt="Ícone esporte e inclusão " />
-            </div>
-
-    </div>
-    </div>
-    </>
+           <article>
+            <InfoCard 
+              img={aulastecnologia}
+              subtitulo="Aulas de Tecnologia"
+              paragrafo="Ministre aulas de tecnologia para jovens em situação de vulnerabilidade social."
+              segParagrafo=""
+              textoBotao="Quero Participar"
+            />
+          </article>
+         <article>
+            <InfoCard 
+              img={esporteinclusao}
+              subtitulo="Esporte e Inclusão"
+              paragrafo="Promova atividades esportivas inclusivas para jovens com deficiência."
+              segParagrafo=""
+              textoBotao="Quero Participar"
+            />
+          </article>
+        </section>
+      </div>
   )
-
 }
