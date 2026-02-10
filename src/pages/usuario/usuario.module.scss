@@ -1,0 +1,124 @@
+.main {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+
+
+section {
+border: solid 1px #ccc;
+display: flex;
+align-items: center;
+gap: 20px;
+max-width: 900px;
+
+
+
+
+  img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 5px;
+
+    background: linear-gradient(
+      270deg,
+      #ff4fd8,
+      #7b61ff,
+      #00aaff,
+      #ff4fd8
+    );
+    background-size: 600% 600%;
+    animation: ringGlow 6s ease infinite;
+  }
+}
+
+@keyframes ringGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+ ul {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 0;
+      margin: 8px 0;
+      list-style: none;
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 14px;
+        
+      }
+    }
+  }
+
+
+
+.div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  h1 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #111;
+  }
+
+  h2 {
+    font-size: 14px;
+    color: #2faa65;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 14px;
+    color: #555;
+    max-width: 520px;
+    line-height: 1.4;
+  }
+}
+
+/* ✅ tags verdes */
+.tipo {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+   
+}
+  .tipo li  {
+    background: #e6f6ec;
+    color:#2faa65;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+
+/* ✅ responsivo */
+@media (max-width: 768px) {
+  .main section {
+    flex-direction: column;
+    text-align: center;
+    border:none;
+
+    ul {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+     
+  }
+}

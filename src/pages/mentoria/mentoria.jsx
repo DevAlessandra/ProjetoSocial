@@ -1,5 +1,5 @@
 import React from 'react'
-import s from './mentoria.module.scss'
+import s from "../Style.module.scss"
 import InfoCard from "../../components/infoCard/infoCard"
 import mentoriacarreiraemprego from "../../assets/icones/mentoriacarreiraemprego.png"
 import compartilheexperiencia from "../../assets/icones/compartilheexperiencia.png"
@@ -7,6 +7,7 @@ import acompanhamento from "../../assets/icones/acompanhamento.png"
 
 export default function Mentoria() {
   return (
+    <main className={s.main}>
     <div className={s.mentoria}>
            <h1>Mentoria </h1>
       <section className={s.cards}>
@@ -43,5 +44,6 @@ export default function Mentoria() {
           
         </section>
       </div>
+      </main>
     )
 }

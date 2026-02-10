@@ -1,5 +1,5 @@
 import React from 'react'
-import s from './eventosEP.module.scss'
+import s from '../Style.module.scss'
 import InfoCard from "../../components/infoCard/infoCard"
 import empoderandojovensfuturo from "../../assets/icones/empoderandojovensfuturo.png"
 import tecnologiaquetransforma from "../../assets/icones/tecnologiaquetransforma.png"
@@ -7,6 +7,7 @@ import carreiraprimeiroemprego from "../../assets/icones/carreiraprimeiroemprego
 
 export default function EventosEP() {
   return (
+     <main className={s.main}>
      <div className={s.eventosEP}>
         <h1>Eventos & Palestras </h1>
       <section className={s.cards}>
@@ -40,5 +41,6 @@ export default function EventosEP() {
             </article>
         </section>
       </div>
+      </main>
     )
 }

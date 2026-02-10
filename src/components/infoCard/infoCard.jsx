@@ -1,4 +1,6 @@
 import s from "./infoCard.module.scss"
+import Swal from 'sweetalert2'
+
 
 
 const InfoCard = (props) => {
@@ -10,7 +12,14 @@ return (
 <p>{props.paragrafo}</p>
 <p>{props.segParagrafo}</p>
 </div>
-<button>{props.textoBotao}</button>
+<button onClick={() =>  
+Swal.fire({
+  position: "top-end",
+  icon: "success",
+  title: "Inscrito com Sucesso!",
+  showConfirmButton: false,
+  timer: 1500
+})}>{props.textoBotao}</button>
 </article>
 )
 }

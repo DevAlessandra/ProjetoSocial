@@ -5,7 +5,7 @@ import Doacao from "./pages/doacao/Doacao"
 import Voluntariado from "./pages/voluntariado/Voluntariado"
 import Mentoria from "./pages/mentoria/mentoria"
 import EventosEP from "./pages/eventosEP/eventosEP"
-//import Usuario from "./pages/usuario/Usuario"
+import Usuario from "./pages/usuario/Usuario"
 import Header from "./components/header/Header"
 import Footer from "./components/footer/Footer"
 
@@ -20,7 +20,7 @@ const App = () => {
         <Route path="/voluntariado" element={<Voluntariado />}/>
         <Route path="/mentoria" element={<Mentoria />}/>
         <Route path="/eventosEP" element={<EventosEP />}/>
-        {/* <Route path="/usuario" element={<Usuario />}/>*/}
+         <Route path="/usuario" element={<Usuario />}/>
      
       </Routes>
       <Footer />

@@ -2,15 +2,18 @@ import InfoCard from "../../components/infoCard/infoCard"
 import institutograndefamilia from "../../assets/icones/institutograndefamilia.png"
 import projetofuturoescola from "../../assets/icones/projetofuturoescola.png"
 import institutoconectajovem from "../../assets/icones/institutoconectajovem.png"
-import s from "./doacao.module.scss"
+import s from "../Style.module.scss"
+
 export default function Doacao() {
     return (
-      <div className={s.doacao}>
+      <main className={s.main}>
+        <div className={s.doacao}>
         <h1>Doação </h1>
       <section className={s.cards}>
           <article>
             <InfoCard 
               img={institutograndefamilia}
+              alt="Imagem de uma pessoa doando alimentos"
               subtitulo="Instituto Grande Família"
               paragrafo="Contribua com alimentos não perecíveis e ajude famílias em situação de vulnerabilidade."
               segParagrafo=""
@@ -39,6 +42,7 @@ export default function Doacao() {
 
         </section>
       </div>
+      </main>
     )
 }
 
