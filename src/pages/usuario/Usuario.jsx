@@ -16,7 +16,7 @@ const Usuario = () => {
           <ul>
             <li><MdOutlinePlace /> Rio de Janeiro - RJ</li>
             <li><CiMail />alesy@gmail.com</li>
-            <li><SlEvent />Membro desde Janeiro 2026</li>
+            <li><SlEvent />Membro desde Fevereiro 2026</li>
           </ul>
           <ul className={s.tipo}>
             <li>Educação</li>

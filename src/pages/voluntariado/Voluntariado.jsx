@@ -1,5 +1,5 @@
 import React from 'react'
-import s from './voluntariado.module.scss'
+import s from "../Style.module.scss"
 import InfoCard from "../../components/infoCard/infoCard"
 import mutiraoreciclagem from "../../assets/icones/mutiraoreciclagem.png"
 import aulastecnologia from "../../assets/icones/aulastecnologia.png"
@@ -7,7 +7,7 @@ import esporteinclusao from "../../assets/icones/esporteinclusao.png"
 
 export default function Voluntariado() {
   return (
-     
+     <main className={s.main}>
     <div className={s.voluntariado}>
            <h1>Voluntariado </h1>
       <section className={s.cards}>
@@ -41,5 +41,6 @@ export default function Voluntariado() {
           </article>
         </section>
       </div>
+      </main>
   )
 }

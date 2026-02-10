@@ -7,7 +7,7 @@
     background-color: #205691;
     position: relative;
     font-family: 'Source Sans 3', sans-serif;
-
+   
     .imgLogo {
         max-width: 87px;
         max-height: 65.7px;
@@ -17,43 +17,92 @@
 }
 
 .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1000px;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
 
-    .Link {
-        padding: 5px 20px;
-        font-family: 'Source Sans 3', sans-serif;
-        color: #fff;
-        font-size: 22px;
-        font-weight: 600;
-       
+  .Link {
+    padding: 5px 20px;
+    font-family: 'Source Sans 3', sans-serif;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -6px;
+      width: 0%;
+      height: 2px;
+      background: linear-gradient(90deg, #ff4fd8, #00aaff);
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
     }
+
+    
+    &:hover::after {
+      width: 70%;
+    }
+  }
 }
+
 
 .imgUser {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 3px solid #00AAFF;
-    cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid #00AAFF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1) rotate(3deg);
+    box-shadow: 0 0 12px rgba(0, 170, 255, 0.7);
+  }
+}
+.navUser {
+  position: absolute;
+  right: 1rem;
+  top: 5rem;
+  background: linear-gradient(135deg, #205691, #122f97);
+  border-radius: 10px;
+  padding: 8px 0;
+  min-width: 160px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+
+  animation: menuOpen 0.3s ease forwards;
+
+  a {
+    display: block;
+    padding: 8px 14px;
+    color: #fff;
+    text-align: left;
+    transition: all 0.25s ease;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.15);
+      padding-left: 20px;
+    }
+  }
 }
 
-.navUser {
-    position: absolute;
-    right: 0%;
-    top: 5rem;
-    background-color: #205691;
-    
-    a {
-        display: block;
-        padding: 5px 10px;
-        color: #fff;
-        text-align: end;
-    }
+@keyframes menuOpen {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
+
 
 .closedNavUser {
     display: none;
