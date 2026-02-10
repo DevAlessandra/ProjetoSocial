@@ -33,7 +33,7 @@ const PaginaInicial = () => {
           <article className={styles.sectionParceiros}>
   <div className={styles.imgensHome}>    
             <div className={styles.img1}>
-                <img src={img} alt="Imagem de pessoas em um evento social" />
+                <img src={img} alt="Imagem de uma mão com um globo" />
             </div>
     </div>
     </article>

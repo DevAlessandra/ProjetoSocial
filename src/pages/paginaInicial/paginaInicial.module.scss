@@ -89,18 +89,54 @@ flex-direction: row;
 
 /* RESPONSIVO */
 @media (max-width: 900px) {
+  @media (max-width: 900px) {
   .home {
+    width: 100%;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 2rem;
+    padding: 2rem 1rem;
+    gap: 2rem;
   }
 
-  .quantidade {
+  .bannerHome {
+    max-width: 100%;
+
+    h2 {
+      font-size: 2.2rem;
+      line-height: 1.2;
+    }
+
+    p {
+      font-size: 0.95rem;
+    }
+  }
+
+  .btnCadastro {
+    margin: 1rem auto;
+  }
+
+  .quantidades {
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+  }
+
+  .sectionParceiros {
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
+  }
+
+  .img1 {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
   }
 
   .imgensHome {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   }
+}
 }
