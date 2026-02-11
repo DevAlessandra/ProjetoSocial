@@ -1,6 +1,7 @@
 
 import styles from "./paginaInicial.module.scss";
 import img from "../../assets/icones/img.png"
+import { Navigate } from "react-router-dom";
 
 
 const PaginaInicial = () => {
@@ -14,7 +15,7 @@ const PaginaInicial = () => {
       
        
         <button
-        onClick={() => window.location.href = "/cadastro"}
+        onClick={() => Navigate("/cadastro")}
         className={`${styles.btnCadastro} ${styles.animate} ${styles.delay1}`}
         >
         Cadastrar Empresa ➔  
