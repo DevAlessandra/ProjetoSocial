@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import s from "../cadastrarEmpresa/cadastro.module.scss";
+import s from "./cadastro.module.scss";
 import Swal from "sweetalert2";
 
 export default function Cadastro() {
