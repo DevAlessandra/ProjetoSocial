@@ -14,7 +14,7 @@ const PaginaInicial = () => {
       
        
         <button
-        onClick={() => window.location.href = "/cadastrarEmpresa"}
+        onClick={() => window.location.href = "/cadastro"}
         className={`${styles.btnCadastro} ${styles.animate} ${styles.delay1}`}
         >
         Cadastrar Empresa ➔  
