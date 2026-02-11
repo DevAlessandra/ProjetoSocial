@@ -1,7 +1,7 @@
 
 import styles from "./paginaInicial.module.scss";
 import img from "../../assets/icones/img.png"
-import { Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 const PaginaInicial = () => {
@@ -9,19 +9,15 @@ const PaginaInicial = () => {
     <>
     <main className={styles.home}>
         <div className={`${styles.bannerHome} ${styles.animate}`}>
-                <h2>Projetos Sociais</h2>
+            <h2>Projetos Sociais</h2>
             <h2> que transformam</h2>
             <p>Conectamos sua empresa com projetos sociais impactantes. Juntos, criamos mudanças reais na comunidade.</p>
       
        
-        <button
-        onClick={() => Navigate("/cadastro")}
-        className={`${styles.btnCadastro} ${styles.animate} ${styles.delay1}`}
-        >
-        Cadastrar Empresa ➔  
-        </button>
-        
-       <div className={`${styles.quantidades} ${styles.animate} ${styles.delay2}`}>
+        <Link to="/cadastro" className={styles.btnCadastro}>
+            Cadastrar Empresa ➔
+        </Link>
+        <div className={`${styles.quantidades} ${styles.animate} ${styles.delay2}`}>
 
             <div className={styles.qtdEmpresas}>
                 <h2>500+</h2>
