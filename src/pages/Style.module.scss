@@ -16,23 +16,20 @@
   display: flex;
   justify-content: center;
   gap: 80px;
-  margin-bottom: 100px;
-   align-items: stretch;
 }
 
 @media screen and (max-width: 768px) {
-    .main {
-        padding: 40px 20px;
-    }
+  .main {
+    padding: 40px 20px;
+  }
 
-     h1 {
-        font-size: 1.8rem;
-    }
+  h1 {
+    font-size: 1.8rem;
+  }
 
-    .cards {
-        flex-direction: column;
-        gap: 40px;
-        align-items: center;
-    }
-    
+  .cards {
+    flex-direction: column;
+    gap: 40px;
+    align-items: stretch;
+  }
 }

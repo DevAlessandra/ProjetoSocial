@@ -8,6 +8,8 @@ import EventosEP from "./pages/eventosEP/eventosEP"
 import Usuario from "./pages/usuario/Usuario"
 import Header from "./components/header/Header"
 import Footer from "./components/footer/Footer"
+import CadastrarEmpresa from "./components/CadastrarEmpresa/cadastrarEmpresa"
+
 
 const App = () => {
   return (
@@ -21,6 +23,7 @@ const App = () => {
         <Route path="/mentoria" element={<Mentoria />}/>
         <Route path="/eventosEP" element={<EventosEP />}/>
          <Route path="/usuario" element={<Usuario />}/>
+         <Route path="/cadastrarEmpresa" element={<CadastrarEmpresa />}/>
      
       </Routes>
       <Footer />

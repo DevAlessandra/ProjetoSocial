@@ -15,7 +15,7 @@ export default function Voluntariado() {
             <InfoCard 
               img={mutiraoreciclagem}
               subtitulo="Mutirão de Reciclagem"
-              paragrafo="Participe de nossos mutirões e ajude a reciclar materiais que podem ser reutilizados."
+              paragrafo="Coletar materiais recicláveis e orientar sobre descarte consciente."
               segParagrafo=""
               textoBotao="Quero Participar"
             />
@@ -25,7 +25,7 @@ export default function Voluntariado() {
             <InfoCard 
               img={aulastecnologia}
               subtitulo="Aulas de Tecnologia"
-              paragrafo="Ministre aulas de tecnologia para jovens em situação de vulnerabilidade social."
+              paragrafo="Ensinar noções básicas de informática, internet segura e programação. Preparar jovens para o mercado de trabalho digital."
               segParagrafo=""
               textoBotao="Quero Participar"
             />
@@ -34,7 +34,7 @@ export default function Voluntariado() {
             <InfoCard 
               img={esporteinclusao}
               subtitulo="Esporte e Inclusão"
-              paragrafo="Promova atividades esportivas inclusivas para jovens com deficiência."
+              paragrafo="Organizar treinos e jogos que incentivem a participação de todos. Promover disciplina, saúde e trabalho em equipe entre jovens."
               segParagrafo=""
               textoBotao="Quero Participar"
             />

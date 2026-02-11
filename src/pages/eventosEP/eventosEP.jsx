@@ -1,5 +1,6 @@
 import React from 'react'
 import s from '../Style.module.scss'
+
 import InfoCard from "../../components/infoCard/infoCard"
 import empoderandojovensfuturo from "../../assets/icones/empoderandojovensfuturo.png"
 import tecnologiaquetransforma from "../../assets/icones/tecnologiaquetransforma.png"
@@ -15,8 +16,8 @@ export default function EventosEP() {
             <InfoCard 
               img={empoderandojovensfuturo}
               subtitulo="Empoderando Jovens para o Futuro"
-              paragrafo="Participe de nossos eventos para empoderar jovens e prepará-los para o futuro."
-              segParagrafo=""
+              paragrafo="Atividade: Palestra motivacional sobre liderança jovem e transformação social."
+              segParagrafo=" Impacto: Inspirar adolescentes a se tornarem agentes de mudança em suas comunidades."
               textoBotao="Quero Participar"
             />
           </article>
@@ -25,17 +26,21 @@ export default function EventosEP() {
             <InfoCard 
               img={tecnologiaquetransforma}
               subtitulo="Tecnologia que Transforma"
-              paragrafo="Conheça como a tecnologia pode transformar a vida dos jovens."
-              segParagrafo=""
+              paragrafo="Atividade: Workshop de introdução à programação e inovação digital."
+
+              segParagrafo="Impacto: Preparar jovens para o mercado de trabalho através da tecnologia."
               textoBotao="Quero Participar"
             />
           </article>
+         
          <article>
             <InfoCard 
               img={carreiraprimeiroemprego}
               subtitulo="Carreira no Primeiro Emprego"
-              paragrafo="Descubra dicas e estratégias para ter sucesso no seu primeiro emprego."
-              segParagrafo=""
+              paragrafo="Atividade: Palestra com profissionais de RH sobre como preparar currículo, entrevistas e postura no mercado."
+
+              segParagrafo="Impacto: Ajudar jovens a conquistar oportunidades de trabalho. dicas e estratégias para ter sucesso no seu primeiro emprego."
+
               textoBotao="Quero Participar"
             />
             </article>

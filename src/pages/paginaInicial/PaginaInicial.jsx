@@ -7,15 +7,21 @@ const PaginaInicial = () => {
   return (
     <>
     <main className={styles.home}>
-        <div className={styles.bannerHome}>
-            <h2>Projetos Sociais</h2>
+        <div className={`${styles.bannerHome} ${styles.animate}`}>
+                <h2>Projetos Sociais</h2>
             <h2> que transformam</h2>
             <p>Conectamos sua empresa com projetos sociais impactantes. Juntos, criamos mudanças reais na comunidade.</p>
       
        
-        <button className={styles.btnCadastro}>Cadastrar Empresa ➔  </button>
-      
-       <div className={styles.quantidades}>
+        <button
+        onClick={() => window.location.href = "/cadastrarEmpresa"}
+        className={`${styles.btnCadastro} ${styles.animate} ${styles.delay1}`}
+        >
+        Cadastrar Empresa ➔  
+        </button>
+        
+       <div className={`${styles.quantidades} ${styles.animate} ${styles.delay2}`}>
+
             <div className={styles.qtdEmpresas}>
                 <h2>500+</h2>
                 <p>Empresas Voluntárias</p>
@@ -31,7 +37,8 @@ const PaginaInicial = () => {
        </div>   
          </div>
           <article className={styles.sectionParceiros}>
-  <div className={styles.imgensHome}>    
+            <div className={`${styles.imgensHome} ${styles.animate} ${styles.delay3}`}>
+
             <div className={styles.img1}>
                 <img src={img} alt="Imagem de uma mão com um globo" />
             </div>

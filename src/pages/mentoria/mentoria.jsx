@@ -15,7 +15,7 @@ export default function Mentoria() {
             <InfoCard 
               img={mentoriacarreiraemprego}
               subtitulo="Mentoria em Carreira e Emprego"
-              paragrafo="Receba orientações sobre carreira e emprego com profissionais qualificados."
+              paragrafo="Receba orientações sobre Orientação sobre currículo, entrevistas e primeiros passos no mercado de trabalho."
               segParagrafo=""
               textoBotao="Quero Participar"
             />
@@ -25,7 +25,7 @@ export default function Mentoria() {
             <InfoCard 
               img={compartilheexperiencia}
               subtitulo="Compartilhe sua Experiência"
-              paragrafo="Compartilhe sua experiência profissional com jovens em busca de orientação."
+              paragrafo="Oriente jovens e profissionais iniciantes em sua área."
               segParagrafo=""
               textoBotao="Quero Participar"
             />
@@ -34,7 +34,7 @@ export default function Mentoria() {
             <InfoCard 
               img={acompanhamento}
               subtitulo="Acompanhamento Individual"
-              paragrafo="Receba acompanhamento individualizado para desenvolver suas habilidades."
+              paragrafo="Participe como guia em jornadas de aprendizado e desenvolvimento. "
               segParagrafo=""
               textoBotao="Quero Participar"
             />
