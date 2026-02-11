@@ -8,7 +8,7 @@ import EventosEP from "./pages/eventosEP/eventosEP"
 import Usuario from "./pages/usuario/Usuario"
 import Header from "./components/header/Header"
 import Footer from "./components/footer/Footer"
-import CadastrarEmpresa from "./components/cadastrarEmpresa/CadastrarEmpresa"
+import CadastrarEmpresa from "./components/cadastrarEmpresa/CadastrarEmpresa.jsx"
 
 
 const App = () => {
