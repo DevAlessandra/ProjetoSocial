@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import s from "../cadastrarEmpresa/cadastrar.module.scss";
+import s from "../cadastrarEmpresa/cadastro.module.scss";
 import Swal from "sweetalert2";
 
-export default function CadastrarEmpresa() {
+export default function Cadastro() {
   const navigate = useNavigate();
 
   const [form, setForm] = useState({

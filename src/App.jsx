@@ -8,7 +8,7 @@ import EventosEP from "./pages/eventosEP/eventosEP"
 import Usuario from "./pages/usuario/Usuario"
 import Header from "./components/header/Header"
 import Footer from "./components/footer/Footer"
-import CadastrarEmpresa from "./components/cadastrarEmpresa/CadastrarEmpresa.jsx"
+import Cadastro from "./components/cadastrarEmpresa/Cadastro"
 
 
 const App = () => {
@@ -23,7 +23,7 @@ const App = () => {
         <Route path="/mentoria" element={<Mentoria />}/>
         <Route path="/eventosEP" element={<EventosEP />}/>
          <Route path="/usuario" element={<Usuario />}/>
-         <Route path="/cadastrarEmpresa" element={<CadastrarEmpresa />}/>
+         <Route path="/cadastro" element={<Cadastro />}/>
      
       </Routes>
       <Footer />
