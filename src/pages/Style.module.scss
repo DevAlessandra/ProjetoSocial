@@ -1,35 +1,38 @@
-
-.main {
-  padding: 60px 80px;
+main {
+  padding: 60px 20px;
+  text-align: center;
 
   h1 {
-    text-align: center;
-    color: #122F97;
+    font-size: 36px;
+    color: #205691;
     margin-bottom: 50px;
-    font-size: 2.2rem;
-    font-family: "Source Sans 3", sans-serif;
-    align-items: center;
   }
 }
 
 .cards {
   display: flex;
   justify-content: center;
-  gap: 80px;
+  align-items: stretch;
 }
 
-@media screen and (max-width: 768px) {
-  .main {
-    padding: 40px 20px;
-  }
+/*  LINHA ENTRE OS CARDS */
+.cards > *:not(:last-child) {
+  border-right: 1px solid #CBCBCB;
+  padding-right: 50px;
+  margin-right: 50px;
+}
 
-  h1 {
-    font-size: 1.8rem;
-  }
-
+/*  RESPONSIVO */
+@media (max-width: 768px) {
   .cards {
     flex-direction: column;
-    gap: 40px;
-    align-items: stretch;
+    align-items: center;
+  }
+
+  .cards > *:not(:last-child) {
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+    margin-bottom: 40px;
   }
 }

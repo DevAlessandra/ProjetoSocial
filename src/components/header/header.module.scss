@@ -15,7 +15,12 @@
         height: 100%;
     }
 }
-
+.menuWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
 .nav {
   display: flex;
   align-items: center;
@@ -107,3 +112,17 @@
 .closedNavUser {
     display: none;
 }
+
+.menuTexto {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+    opacity: 0.9;
+   text-align: center;
+    &:hover {
+        opacity: 1;
+        transform: translateY(-2px);
+    }   
+  }

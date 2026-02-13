@@ -5,7 +5,7 @@ import Swal from 'sweetalert2'
 
 const InfoCard = (props) => {
 return (
-<article className={s.article}>
+<section className={s.article}>
 <img src={props.img} alt={props.alt} />
 <div className={s.conteudo}>
 <h2>{props.subtitulo}</h2>
@@ -20,7 +20,7 @@ Swal.fire({
   showConfirmButton: false,
   timer: 1500
 })}>{props.textoBotao}</button>
-</article>
+</section>
 )
 }
 
