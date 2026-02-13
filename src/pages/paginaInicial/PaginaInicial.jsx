@@ -1,5 +1,5 @@
 
-import styles from "./paginaInicial.module.scss";
+import styles from "./paginaInicial.module.scss"
 import img from "../../assets/icones/img.png"
 import { Link } from "react-router-dom";
 

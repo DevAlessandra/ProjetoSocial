@@ -1,22 +1,19 @@
 .home {
-  width: 80%;
+  width: 100%;
   min-height: 100vh;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 20px;
+  display: flex;
+  flex-direction: row;   // mantém lado a lado
+  justify-content: space-between; // coloca juntos no centro
+  padding: 0px;
   background: #fff;
   font-family: "Segoe UI", sans-serif;
-    display: flex;
-  
-}
-.containerBtn {
-  margin-top: 1rem;
-   flex-direction: column;
 }
 
 
 .bannerHome {
   max-width: 520px;
+  margin-top: 100px;
+
 
   h2 {
     font-size: 3.5rem;
@@ -43,13 +40,17 @@
   color: #fff;
   font-size: 0.95rem;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+
 
   &:hover {
-    background: #ff4c4c;
-    transform: translateY(-2px);
+    transform: scale(1.1) rotate(3deg);
+    box-shadow: 0 0 12px rgba(172, 51, 45, 0.7);
+    
   }
 }
+  
+
 
 .quantidades {
 margin-top: 50px;
@@ -116,7 +117,7 @@ flex-direction: row;
 
 /* RESPONSIVO */
 @media (max-width: 900px) {
-  @media (max-width: 900px) {
+  
   .home {
     width: 100%;
     flex-direction: column;
@@ -165,5 +166,4 @@ flex-direction: row;
   .imgensHome {
     margin-top: 1.5rem;
   }
-}
 }

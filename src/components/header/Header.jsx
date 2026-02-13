@@ -44,11 +44,12 @@ export default function Header() {
   />
   <p className={s.menuTexto}>Menu</p>
 </div>
-      </header>
+     
       <nav className={menuAberto ? s.navUser : s.closedNavUser}>
+       
         <Link to={"/usuario"} onClick={() => setMenuAberto(false)}>Alessandra Santana </Link>
-       <Link onClick={() => setMenuAberto(false)}>Meu voluntariado</Link>
-        <Link onClick={() => setMenuAberto(false)}>Configurações da conta</Link>
+      {/* <Link onClick={() => setMenuAberto(false)}>Meu voluntariado</Link>*/}
+       {/*<Link onClick={() => setMenuAberto(false)}>Configurações da conta</Link>*/}
         {isMobile &&
           (<div>
             <Link to={"/doacao"} onClick={() => setMenuAberto(false)}>Doação</Link>
@@ -60,6 +61,7 @@ export default function Header() {
           
           <Link to={"/"}onClick={() => setMenuAberto(false)}>Sair</Link>
       </nav>
+        </header>
     </>
   )
 }
