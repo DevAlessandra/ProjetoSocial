@@ -1,0 +1,101 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f4f8;
+  padding: 40px;
+  gap: 60px;
+}
+
+/* LADO ESQUERDO */
+.left {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   // 👈 centraliza horizontalmente
+  text-align: center;    // 👈 centraliza o texto
+}
+
+.logo {
+  width: 190px;
+  margin-bottom: 10px;
+  justify-content: center;
+
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2f5d9f;
+  line-height: 1.2;
+}
+
+/* CARD LOGIN */
+.form {
+  background: #ffffff;
+  width: 100%;
+  max-width: 380px;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.formTitle {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #2f5d9f;
+}
+
+.input {
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  border-color: #2f5d9f;
+  box-shadow: 0 0 0 3px rgba(47, 93, 159, 0.15);
+  outline: none;
+}
+
+.button {
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  background: #2f5d9f;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.button:hover {
+  background: #244a80;
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left {
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}

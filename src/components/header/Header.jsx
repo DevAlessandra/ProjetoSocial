@@ -22,7 +22,7 @@ export default function Header() {
   return (
     <>
       <header className={s.header}>
-        <Link to={"/"}>
+        <Link to={"/PaginaInicial"}>
           <img className={s.imgLogo} src={logo} alt="Imagem de logo do projeto connect sendo representada por uma mão segurando um coração, simbolizando apoio" />
         </Link>
         {!isMobile &&

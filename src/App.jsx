@@ -9,7 +9,7 @@ import Usuario from "./pages/usuario/Usuario"
 import Header from "./components/header/Header"
 import Footer from "./components/footer/Footer"
 import Cadastro from "./pages/cadastro/Cadastro"
-
+import Login from "./components/loginCopy/login";
 
 const App = () => {
   return (
@@ -17,7 +17,8 @@ const App = () => {
     <Header />
   
       <Routes>
-        <Route path="/" element={<PaginaInicial/>}/>
+        <Route path="/" element={<Login />} />
+        <Route path="/PaginaInicial" element={<PaginaInicial/>}/>
        <Route path="/doacao" element={<Doacao />}/>
         <Route path="/voluntariado" element={<Voluntariado />}/>
         <Route path="/mentoria" element={<Mentoria />}/>

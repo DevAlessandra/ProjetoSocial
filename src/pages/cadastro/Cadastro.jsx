@@ -85,7 +85,7 @@ export default function Cadastro() {
           })}>Cadastrar</button>
 
 
-          <button type="button" onClick={() => navigate("/")}>
+          <button type="button" onClick={() => navigate("/PaginaInicial")}>
             Voltar ao início
           </button>
         </div>
